@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div > h1 {
+  font-size: 70px;
+}
+
+.btns-container {
+  display: flex;
+}
+
+.btn {
+  margin: 0.5em;
+  padding: 1em;
+  color: #ffff;
+  font-size: 28px;
+  text-justify: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.green-button {
+  background-color: #21d370;
+}
+
+.red-button {
+  background-color: #e3160a;
+}
+
+.input-custom-value {
+  border: none;
+  font-size: 28px;
+  background-color: #eeeeee;
+}
