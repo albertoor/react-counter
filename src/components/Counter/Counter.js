@@ -3,11 +3,11 @@ import useCounter from '../../hooks/useCounter';
 import './Counter.css';
 
 const Counter = () => {
-  const [valueToIncremente, setValueToIncrement] = useState(0);
-  const counter = useCounter(valueToIncremente);
+  const [customValue, setCustomValue] = useState(0);
+  const counter = useCounter(customValue);
 
   const onChangeHandle = e => {
-    setValueToIncrement(e.target.value);
+    setCustomValue(e.target.value);
   };
 
   return (
@@ -18,7 +18,7 @@ const Counter = () => {
 
       <div className="btns-container">
         <button className="btn red-button" onClick={counter.customDecrement}>
-          -{valueToIncremente}
+          -{customValue}
         </button>
         <button className="btn red-button" onClick={counter.decrement}>
           -
@@ -27,7 +27,7 @@ const Counter = () => {
           +
         </button>
         <button className="btn green-button" onClick={counter.customIncrease}>
-          +{valueToIncremente}
+          +{customValue}
         </button>
       </div>
 
