@@ -31,13 +31,16 @@ const Counter = () => {
         </button>
       </div>
 
-      <div>
+      <div className="more-options">
         <input
           className="input-custom-value "
           type="number"
           onChange={e => onChangeHandle(e)}
           placeholder="Enter your custom counter"
         />
+        <button className="btn blue-button" onClick={counter.resetCounter}>
+          Reset
+        </button>
       </div>
     </div>
   );

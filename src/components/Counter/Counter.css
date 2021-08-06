@@ -33,8 +33,17 @@
   background-color: #e3160a;
 }
 
+.blue-button {
+  background-color: #0000cd;
+}
+
 .input-custom-value {
   border: none;
   font-size: 28px;
   background-color: #eeeeee;
+}
+
+.more-options {
+  display: flex;
+  flex-direction: column;
 }
